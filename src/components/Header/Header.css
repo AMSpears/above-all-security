@@ -1,0 +1,23 @@
+nav.scrollNavs {
+    overflow: auto;
+    white-space: nowrap;
+}
+
+nav.scrollNavs a {
+    display: inline-block;
+    text-align: center;
+    padding: 20px;
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Roboto Slab', serif;
+}
+
+nav.scrollNavs a:hover {
+   color: gray;
+}
+#logo {
+    width: 150px;
+    height: 150px;
+    margin-right: 50px;
+}
