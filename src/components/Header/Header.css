@@ -1,23 +1,114 @@
-nav.scrollNavs {
-    overflow: auto;
-    white-space: nowrap;
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
 }
 
-nav.scrollNavs a {
-    display: inline-block;
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: #4b4e56;
     text-align: center;
-    padding: 20px;
-    color: black;
+    padding: 40px 30px;
     text-decoration: none;
+    font-family: "Roboto Slab", serif;
     font-size: 20px;
-    font-family: 'Roboto Slab', serif;
 }
 
-nav.scrollNavs a:hover {
-   color: gray;
+li a:hover {
+    color: #bf4e47;
+}
+
+img {
+    margin-right: 60px;
 }
 #logo {
-    width: 150px;
-    height: 150px;
-    margin-right: 50px;
+    float: left;
+}
+
+
+
+@media only screen and (max-width: 414px) {
+    ul {
+         overflow: auto;
+         white-space: nowrap;
+    }
+
+    ul li {
+        display: inline-block;
+      }
+
+    li {
+        float: none;
+    }
+
+    li a {
+        font-size: 14px;
+    }
+
+    #logo {
+        float: none;
+    }
+
+    img {
+        margin-right: 20px;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+   ul {
+         overflow: auto;
+         white-space: nowrap;
+    }
+
+    ul li {
+        display: inline-block;
+      }
+
+    li {
+        float: none;
+    }
+
+    li a {
+        font-size: 14px;
+    }
+
+    #logo {
+        float: none;
+    }
+    
+    img {
+        margin-right: 20px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+   ul {
+         overflow: auto;
+         white-space: nowrap;
+    }
+
+    ul li {
+        display: inline-block;
+      }
+
+    li {
+        float: none;
+    }
+
+    li a {
+        font-size: 14px;
+    }
+
+    #logo {
+        float: none;
+    }
+    
+    img {
+        margin-right: 20px;
+    }
 }

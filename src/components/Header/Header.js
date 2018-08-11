@@ -5,15 +5,13 @@ import "./Header.css"
 
 const Header = () =>{
     return(
-    <div>
-        <nav className = "scrollNavs">
-            <a href= "/"> <img id= "logo" src={Logo} alt= "Above All Security"/></a>
-            <a id = "home" href="/" >Home</a>
-            <a id= "about" href= "#">About Us</a>
-            <a id= "services" href="#">Services</a>
-            <a id= "contact" href= "#">Contact Us</a>
-        </nav>
-    </div>
+        <ul>
+            <a id="logo" href= "/"><img src= {Logo} width= "80px" height= "80px"/></a>
+            <li><a href= "/">Home</a></li>
+            <li><a href= "#">About Us</a></li>
+            <li><a href= "#">Services</a></li>
+            <li><a href= "#">Contact Us</a></li>
+        </ul>
     )
 }
 
