@@ -10,6 +10,7 @@ input, textarea {
     margin-top: 20px;
     margin-bottom: 20px;
     padding: 20px;
+
 }
 textarea {
     height: 150px;
@@ -39,21 +40,24 @@ input[type=submit] {
 }
 
 /* reponsiveness to other devices */
-@media only screen and (max-width: 71024px) {
-    input,
-    textarea {
+@media only screen and (max-width: 1024px) {
+    input[placeholder],
+    textarea[placeholder],
+    input[type=submit] {
         width: 64%;
     }
 }
 @media only screen and (max-width: 768px) {
-    input,
-    textarea {
+    input[placeholder],
+    textarea[placeholder],
+    input[type=submit] {
         width: 64%;  
     }
 }
 @media only screen and (max-width: 414px) {
-    input,
-    textarea {
+    input[placeholder],
+    textarea[placeholder],
+    input[type=submit] {
         width: 74%;
         font-size:18px;
     }
@@ -68,8 +72,9 @@ input[type=submit] {
 }
 
 @media only screen and (max-width: 375px) {
-    input,
-    textarea {
+    input[placeholder],
+    textarea[placeholder],
+    input[type=submit] {
        width: 74%;
        font-size: 16px;
    }
@@ -84,8 +89,9 @@ input[type=submit] {
 }
 
 @media only screen and (max-width: 320px) {
-    input,
-    textarea {
+    input[placeholder],
+    textarea[placeholder],
+    input[type=submit] {
        width: 74%;
        font-size: 16px;
    }
