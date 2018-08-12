@@ -43,7 +43,9 @@ h1,h2, h3, p {
     background-color: #4b4e56;
     opacity: 0.85;
 }
-
+#contact-form {
+    height: inherit;
+}
 #service-1,
 #service-2,
 #service-3 {

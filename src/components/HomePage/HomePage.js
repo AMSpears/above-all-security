@@ -1,5 +1,6 @@
 import React from 'react'
 import DcImage from "../Img/washington_dc_picture.jpeg"
+import ContactForm from "../ContactForm/ContactForm"
 import "./HomePage.css"
 
 const HomePage = () =>{
@@ -52,6 +53,10 @@ const HomePage = () =>{
                         </p>
                     </div>
                 </div>
+            </section>
+            <section id= "contact-form">
+                <h2>Contact Us</h2>
+                <ContactForm/>
             </section>
         </div>
 
