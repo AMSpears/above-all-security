@@ -59,14 +59,10 @@ input[type=submit] {
     textarea[placeholder],
     input[type=submit] {
         width: 74%;
-        font-size:18px;
-    }
-    ::placeholder {
         font-size: 18px;
     }
 
-    input[placeholder],
-    textarea[placeholder] {
+    ::placeholder {
         font-size: 18px;
     }
 }
@@ -75,31 +71,26 @@ input[type=submit] {
     input[placeholder],
     textarea[placeholder],
     input[type=submit] {
-       width: 74%;
-       font-size: 16px;
-   }
+        width: 74%;
+        font-size: 16px;
+    }
+
     ::placeholder {
         font-size: 16px;
     }
 
-    input[placeholder],
-    textarea[placeholder] {
-        font-size: 16px;
-    }
 }
 
 @media only screen and (max-width: 320px) {
     input[placeholder],
     textarea[placeholder],
     input[type=submit] {
-       width: 74%;
-       font-size: 16px;
-   }
+        width: 74%;
+        font-size: 16px;
+    }
+
     ::placeholder {
         font-size: 16px;
     }
-    input[placeholder],
-    textarea[placeholder] {
-        font-size: 16px;
-    }
+   
 }
