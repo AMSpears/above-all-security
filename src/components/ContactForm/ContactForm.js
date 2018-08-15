@@ -8,34 +8,40 @@ import "./ContactForm.css"
 class ContactForm extends React.Component {
     handleSubmit(e) {
         e.preventDefault();
-        const name = document.getElementById('name').value;
-        const email = document.getElementById('email').value;
-        const message = document.getElementById('message').value;
+        const name = document.getElementById('name').value
+        const email = document.getElementById('email').value
+        const phone = document.getElementById('phone').value
+        const subject = document.getElementById('subject').value
+        const message = document.getElementById('message').value
+        e.target.reset();
         axios({
             method: "POST",
             url: "http://localhost:3001/send",
             data: {
                 name: name,
                 email: email,
+                phone: phone,
+                subject: subject,
                 message: message
             }
-        }).then((response) => {
+        })
+        .then((response) => {
             if (response.data.msg === 'success') {
-                 alert("Message Sent!")
-                 // reference https://stackoverflow.com/questions/43922508/clear-and-reset-form-input-fields for reset function
-                this.myFormRef.reset();
+                 console.log("Message Sent!")
             } else if (response.data.msg === 'fail') {
-                alert("Message failed to send. Try again!")
+                console.log("Message failed to send. Try again!")
             }
         })
     }
 
     render(){
         return(
-            <form ref={(el) => this.myFormRef = el} id ='contact-form' onSubmit={this.handleSubmit.bind(this)} method="POST">
+            <form  id ='contact-form' onSubmit={this.handleSubmit.bind(this)} method="POST">
                 <input id= "name" type = "text" name= "name" placeholder= "Full Name" required/><br/>
                 <input id= "email" type = "email" name= "email" placeholder= "Email Address" required /><br/>
-                <textarea id= "message" name = "message" rows = "5" placeholder= "How can we help you?" required> </textarea><br/>
+                <input id= "phone" type = "number" name= "phone" minLength= "9" placeholder= "Phone Number"/><br/>
+                <input id= "subject" type= "text" name= "subject" maxLength= "40" placeholder= "Subject"/><br/>
+                <textarea id= "message"  name = "message" rows = "5" defaultValue= "How can we help you?" required/> <br/>
                 <input type="submit" value="Send Message"/>             
             </form>
         )

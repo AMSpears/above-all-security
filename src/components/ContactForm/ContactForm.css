@@ -16,7 +16,7 @@ textarea {
     height: 150px;
 }
 input[placeholder],
-textarea[placeholder] {
+textarea {
     color: #9c4c49;
     font-weight: 400;
     font-family: "Roboto Condensed", serif;
@@ -42,21 +42,21 @@ input[type=submit] {
 /* reponsiveness to other devices */
 @media only screen and (max-width: 1024px) {
     input[placeholder],
-    textarea[placeholder],
+    textarea,
     input[type=submit] {
         width: 64%;
     }
 }
 @media only screen and (max-width: 768px) {
     input[placeholder],
-    textarea[placeholder],
+    textarea,
     input[type=submit] {
         width: 64%;  
     }
 }
 @media only screen and (max-width: 414px) {
     input[placeholder],
-    textarea[placeholder],
+    textarea,
     input[type=submit] {
         width: 74%;
         font-size: 18px;
@@ -69,7 +69,7 @@ input[type=submit] {
 
 @media only screen and (max-width: 375px) {
     input[placeholder],
-    textarea[placeholder],
+    textarea,
     input[type=submit] {
         width: 74%;
         font-size: 16px;
@@ -83,7 +83,7 @@ input[type=submit] {
 
 @media only screen and (max-width: 320px) {
     input[placeholder],
-    textarea[placeholder],
+    textarea,
     input[type=submit] {
         width: 74%;
         font-size: 16px;
