@@ -21,6 +21,7 @@ li a {
 
 li a:hover {
     color: #bf4e47;
+    opacity: 0.85;
 }
 
 img {

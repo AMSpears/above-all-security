@@ -68,11 +68,15 @@ const HomePage = () =>{
             </a>
             <section id = "companies">
               <h2>Companies we are working with</h2>
-              <img id= "company-1" src={PassionChurchLogo} width= "100px" height="100px" />
+              <a href = "https://passioncitychurch.com/" target= "_blank"> <img id= "company-1" src={PassionChurchLogo} width= "100px" height="100px" /></a>
             </section>
             <section id ="footer">
-            <h2>Follow us in Social Media</h2>
-            <a id= "instagram" href= "https://www.instagram.com/aboveallsecurity/" target= "_blank"><i class="fab fa-instagram"></i> Instagram</a>
+            <h2>Follow us in social media</h2>
+            <div className ="social-media">
+            <a id= "instagram" href= "https://www.instagram.com/aboveallsecurity/" target= "_blank"><i class="fab fa-instagram"></i> </a>
+            <a id= "facebook" href= "#" target= "_blank"><i class="fab fa-facebook"></i> </a>
+            <a id= "twitter" href= "#" target= "_blank"><i class="fab fa-twitter-square"></i> </a>
+            </div>
             <p id= "copy-rights">© <a href="http://angiespears.com/" target= "_blank">Angie Spears</a>. All rights reserved. ©2018</p>
             </section>
         </div>

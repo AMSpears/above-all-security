@@ -17,7 +17,7 @@ textarea {
 }
 input[placeholder],
 textarea {
-    color: #9c4c49;
+    color: #bf4e47;
     font-weight: 400;
     font-family: "Roboto Condensed", serif;
     font-size: 20px;
@@ -26,13 +26,13 @@ textarea {
 }
 
 ::placeholder {
-    color: #9c4c49;
+    color: #bf4e47;
     font-weight: 400;
     font-family: "Roboto Condensed", serif;
     font-size: 20px;
 }
 input[type=submit] {
-    background-color: #9c4c49;
+    background-color: #bf4e47;
     color: #fefdfd;
     border: none;
     cursor: pointer;

@@ -64,19 +64,36 @@ h1,h2, h3, p {
     background-color:#fefdfd;
     height: 400px;
 }
-#instagram  {
-    padding-left: 45%;
-    text-decoration: none;
-    font-size: 20px;
-    color:#bf4e47;
+.social-media  {
+    margin-left: 43%;
+    font-size: 30px;
+}
+#instagram {
+    color: #1a0dab;
+    padding: 20px;
+}
+#facebook {
+    color: #365899;
+    padding: 20px;
+}
+#twitter {
+    color: #1da1f2;
+    padding: 20px;
 }
 #copy-rights {
-    padding-top: 200px;
+    padding-top: 150px;
 }
 a {
     text-decoration: none;
-        color:#bf4e47;
-
+    color:#1a0dab;
+    opacity: 0.85;
+}
+a:hover,
+#instagram:hover,
+#facebook:hover,
+#twitter:hover {
+    color: #bf4e47;
+    opacity: 0.85;
 }
 
 /* reponsiveness to other devices */
@@ -92,9 +109,10 @@ a {
     #company-1 {
         margin-left: 20%;
     }
-    #instagram {
-        padding-left: 30%;
+    .social-media {
+        margin-left: 22%;
     }
+ 
     h1 {
         margin-top: 0;
         font-size: 22px;
@@ -124,8 +142,8 @@ a {
     #company-1 {
         margin-left: 20%;
     }
-    #instagram {
-        padding-left: 30%;
+    .social-media {
+        margin-left: 20%;
     }
     h1 {
         margin-top: 0;
@@ -156,9 +174,16 @@ a {
         margin-left: 20%;
     }
 
-    #instagram {
-        padding-left: 30%;
+    .social-media {
+        margin-left: 20%;
     }
+
+    #instagram,
+    #twitter,
+    #facebook {
+        padding: 15px;
+    }
+
     h1 {
         margin-top: 0;
         font-size: 20px;
