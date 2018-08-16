@@ -37,12 +37,45 @@ class ContactForm extends React.Component {
     render(){
         return(
             <form  id ='contact-form' onSubmit={this.handleSubmit.bind(this)} method="POST">
-                <input id= "name" type = "text" name= "name" placeholder= "Full Name" required/><br/>
-                <input id= "email" type = "email" name= "email" placeholder= "Email Address" required /><br/>
-                <input id= "phone" type = "number" name= "phone" minLength= "9" placeholder= "Phone Number"/><br/>
-                <input id= "subject" type= "text" name= "subject" maxLength= "40" placeholder= "Subject"/><br/>
-                <textarea id= "message"  name = "message" rows = "5" defaultValue= "How can we help you?" required/> <br/>
-                <input type="submit" value="Send Message"/>             
+                <input 
+                    id= "name" 
+                    type = "text" 
+                    name= "name" 
+                    placeholder= "Full Name" 
+                    required
+                /> <br/>
+                <input 
+                    id= "email" 
+                    type = "email" 
+                    name= "email" 
+                    placeholder= "Email Address" 
+                    required 
+                /><br/>
+                <input 
+                    id= "phone" 
+                    type = "number" 
+                    name= "phone" 
+                    minLength= "9" 
+                    placeholder= "Phone Number"
+                /><br/>
+                <input 
+                    id= "subject" 
+                    type= "text" 
+                    name= "subject" 
+                    maxLength= "40" 
+                    placeholder= "Subject"
+                /><br/>
+                <textarea 
+                    id= "message"  
+                    name = "message" 
+                    rows = "5" 
+                    defaultValue= "How can we help you?" 
+                    required
+                /> <br/>
+                <input 
+                    type="submit" 
+                    value="Send Message"
+                />             
             </form>
         )
     }

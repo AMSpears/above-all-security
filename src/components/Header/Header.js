@@ -8,9 +8,9 @@ const Header = () =>{
         <ul>
             <a id="logo" href= "/"><img src= {Logo} width= "80px" height= "80px"/></a>
             <li><a href= "/">Home</a></li>
-            <li><a href= "#">About Us</a></li>
-            <li><a href= "#">Services</a></li>
-            <li><a href= "#">Contact Us</a></li>
+            <li><a href= "#about-us">About Us</a></li>
+            <li><a href= "#services">Services</a></li>
+            <li><a href= "#contact-us">Contact Us</a></li>
         </ul>
     )
 }

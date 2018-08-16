@@ -1,5 +1,7 @@
 import React from 'react'
+
 import DcImage from "../Img/washington_dc_picture.jpeg"
+import PassionChurchLogo from "../Img/passion_city_church_logo.png"
 import ContactForm from "../ContactForm/ContactForm"
 import "./HomePage.css"
 
@@ -13,6 +15,7 @@ const HomePage = () =>{
             <section id= "image">
                 <img src= {DcImage} alt= "DC Image" width= "100%" height = "600px"/>
             </section>
+            <a name ="about-us">
             <section id= "about-us">
                 <h2 id= "about-us"> About Us </h2>
                 <p id="text-2"> Lorem Ipsum is simply dummy text of the printing and<br/>
@@ -25,6 +28,8 @@ const HomePage = () =>{
                     Aldus PageMaker including versions of Lorem Ipsum 
                 </p>
             </section>
+            </a>
+            <a name ="services">
             <section id= "services" >
                 <h2>Our Services</h2>
                 <div className= "main-container">
@@ -54,9 +59,21 @@ const HomePage = () =>{
                     </div>
                 </div>
             </section>
+            </a>
+            <a name="contact-us">
             <section id= "contact-form">
                 <h2>Contact Us</h2>
                 <ContactForm/>
+            </section>
+            </a>
+            <section id = "companies">
+              <h2>Companies we are working with</h2>
+              <img id= "company-1" src={PassionChurchLogo} width= "100px" height="100px" />
+            </section>
+            <section id ="footer">
+            <h2>Follow us in Social Media</h2>
+            <a id= "instagram" href= "https://www.instagram.com/aboveallsecurity/" target= "_blank"><i class="fab fa-instagram"></i> Instagram</a>
+            <p id= "copy-rights">© <a href="http://angiespears.com/" target= "_blank">Angie Spears</a>. All rights reserved. ©2018</p>
             </section>
         </div>
 

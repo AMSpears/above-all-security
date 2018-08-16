@@ -24,6 +24,7 @@ textarea {
     width: 34%;
 
 }
+
 ::placeholder {
     color: #9c4c49;
     font-weight: 400;
