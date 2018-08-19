@@ -10,7 +10,7 @@ const HomePage = () =>{
         <div>
             <section id = "intro">
                 <h1>Above All Security</h1>
-                <p> Serving the community in washington DC...Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                <p> Currently serving the community in washington DC... </p>
             </section>
             <section id= "image">
                 <img src= {DcImage} alt= "DC Image" width= "100%" height = "600px"/>

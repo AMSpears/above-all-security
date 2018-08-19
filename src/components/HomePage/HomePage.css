@@ -97,6 +97,24 @@ a:hover,
 }
 
 /* reponsiveness to other devices */
+@media only screen and (max-width: 1024px) {
+    #company-1 {
+        margin-left: 35%;
+    }
+    .social-media {
+        margin-left: 40%;
+    }
+}
+@media only screen and (max-width: 768px) {
+ 
+    #company-1 {
+        margin-left: 30%;
+    }
+    .social-media {
+        margin-left: 35%;
+    }
+ 
+}
 @media only screen and (max-width: 414px) {
     section {
         height: inherit;
@@ -115,17 +133,17 @@ a:hover,
  
     h1 {
         margin-top: 0;
-        font-size: 22px;
+        font-size: 20px;
     }
     h2 {
         margin-top:0;
-        font-size: 20px;    
+        font-size: 18px;    
     }
     h3 {
-        font-size: 18px;
+        font-size: 16px;
     }
     p {     
-        font-size: 16px;
+        font-size: 14px;
     }
 
 }
@@ -147,17 +165,17 @@ a:hover,
     }
     h1 {
         margin-top: 0;
-        font-size: 22px;
+        font-size: 20px;
     }
     h2 {
         margin-top:0;
-        font-size: 20px;    
+        font-size: 18px;    
     }
     h3 {
-        font-size: 18px;
+        font-size: 16px;
     }
     p {     
-        font-size: 16px;
+        font-size: 14px;
     }
 }
 
@@ -193,10 +211,10 @@ a:hover,
         font-size: 18px;    
     }
     h3 {
-        font-size: 16px;
+        font-size: 14px;
     }
     p {     
-        font-size: 14px;
+        font-size: 12px;
     }
 }
 

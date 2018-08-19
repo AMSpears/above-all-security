@@ -1,11 +1,19 @@
 import React from 'react'
 import axios from 'axios'
+
 import "./ContactForm.css"
 //Contact form set up tutorials:
 //https://www.youtube.com/watch?v=nF9g1825mwk
 //https://medium.com/@binhchung48/create-a-contact-form-with-nodemailer-react-js-and-express-js-7757d41e2448
 
 class ContactForm extends React.Component {
+    messageSuccess = () => {
+        return(
+            <div>
+            <p>Message sent!</p>
+            </div>
+        )
+    }
     handleSubmit(e) {
         e.preventDefault();
         const name = document.getElementById('name').value
@@ -27,16 +35,16 @@ class ContactForm extends React.Component {
         })
         .then((response) => {
             if (response.data.msg === 'success') {
-                 console.log("Message Sent!")
+                <div>Message Sent!</div>
+                console.log("Message Sent!")
             } else if (response.data.msg === 'fail') {
                 console.log("Message failed to send. Try again!")
             }
         })
     }
-
     render(){
         return(
-            <form  id ='contact-form' onSubmit={this.handleSubmit.bind(this)} method="POST">
+            <form id ='contact-form' onSubmit={this.handleSubmit.bind(this)} method="POST">
                 <input 
                     id= "name" 
                     type = "text" 
