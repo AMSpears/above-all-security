@@ -39,6 +39,11 @@ input[type=submit] {
     width: 34%;
 
 }
+#msg {
+    font-family: "Roboto Condensed",serif;
+    color: black;
+    font-size: 18px;
+}
 
 /* reponsiveness to other devices */
 @media only screen and (max-width: 1024px) {
@@ -66,6 +71,9 @@ input[type=submit] {
     ::placeholder {
         font-size: 18px;
     }
+    #msg {
+        font-size: 16px;
+    }
 }
 
 @media only screen and (max-width: 375px) {
@@ -80,6 +88,9 @@ input[type=submit] {
         font-size: 16px;
     }
 
+    #msg {
+        font-size: 14px;
+     }
 }
 
 @media only screen and (max-width: 320px) {
@@ -92,6 +103,9 @@ input[type=submit] {
 
     ::placeholder {
         font-size: 16px;
+    }
+    #msg {
+         font-size: 14px;
     }
    
 }

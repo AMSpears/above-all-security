@@ -27,16 +27,18 @@ class ContactForm extends React.Component {
             }
         })
         .then((response) => {
+            const elMsg = document.getElementById('msg')
             if (response.data.msg === 'success') {
-                console.log("Message Sent!")
+                elMsg.innerHTML = "Thanks for reaching out! We recieved your message and will contact you shortly."
             } else if (response.data.msg === 'fail') {
-                console.log("Message failed to send. Try again!")
+                elMsg.innerHTML= "An error occurred when sending this message! Please try again or send us a direct message to hello@aboveallsecurity.com."
             }
         })
     }
     render(){
         return(
             <form id ='contact-form' onSubmit={this.handleSubmit.bind(this)} method="POST">
+                <div id= "msg"> </div>
                 <input 
                     id= "name" 
                     type = "text" 
