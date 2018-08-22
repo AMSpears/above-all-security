@@ -7,6 +7,7 @@ import "./HomePage.css"
 
 const HomePage = () =>{
     return(
+        // Page content divided by sessions
         <div>
             <section id = "intro">
                 <h1>Above All Security</h1>
