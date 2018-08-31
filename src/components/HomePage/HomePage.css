@@ -1,224 +1,291 @@
  /* sections */
+
  section {
-    position: relative;
-    overflow: hidden;
-    height: 600px;
-}
+     position: relative;
+     overflow: hidden;
+     height: 700px;
+ }
 
-/* section containers  */
-.main-container {
-    display: flex;
-}
-.container-details {
-    padding: 20px;
-}
+ /* section containers  */
 
-/* text */
-h1 {
-    margin-top: 200px;
-    text-align: center;
-    color: black;
-    font-size: 30px;
-}
-h2 {
-    margin-top: 100px;
-    text-align: center;
-    color: black;
-}
-h3 {
-    text-align: center;
-    color:black;
-}
-p {
-    margin: 0;
-    text-align: center;
-    font-size: 20px;
-    color: #51555f;
-}
-h1,h2, h3, p {
-    font-family: "Roboto Condensed", serif;
-}
-/* specific text */
-#services {
-    background-color:#bf4e47;
-    opacity: 0.89;
-}
-#contact-form {
-    height: inherit;
-}
-#service-1,
-#service-2,
-#service-3 {
-    color: #fefdfd;
-}
-#companies {
-    background-color:#6b707d;
-    opacity: 0.89;
-    margin-top: 200px;
-    height: 400px;
-}
-#company-1 {
-    margin-left: 40%;
-}
-#footer {
-    background-color:#fefdfd;
-    height: 400px;
-}
-.social-media  {
-    margin-left: 43%;
-    font-size: 30px;
-}
-#instagram {
-    color: #1a0dab;
-    padding: 20px;
-}
-#facebook {
-    color: #365899;
-    padding: 20px;
-}
-#twitter {
-    color: #1da1f2;
-    padding: 20px;
-}
-#copy-rights {
-    padding-top: 150px;
-}
-a {
-    text-decoration: none;
-    color:#1a0dab;
-    opacity: 0.85;
-}
-a:hover,
-#instagram:hover,
-#facebook:hover,
-#twitter:hover {
-    color: #bf4e47;
-    opacity: 0.85;
-}
+ .container-details {
+     display: flex;
+     flex-wrap: wrap;
+     padding: 40px;
+ }
 
-/* reponsiveness to other devices */
-@media only screen and (max-width: 1024px) {
-    #company-1 {
-        margin-left: 35%;
-    }
-    .social-media {
-        margin-left: 40%;
-    }
-}
-@media only screen and (max-width: 768px) {
- 
-    #company-1 {
-        margin-left: 30%;
-    }
-    .social-media {
-        margin-left: 35%;
-    }
- 
-}
-@media only screen and (max-width: 414px) {
-    section {
-        height: inherit;
-        padding-top: 50px;
-        padding-bottom: 50px;
-    }
-    .main-container {
-        flex-direction: column;
-    }
-    #company-1 {
-        margin-left: 20%;
-    }
-    .social-media {
-        margin-left: 22%;
-    }
- 
-    h1 {
-        margin-top: 0;
-        font-size: 20px;
-    }
-    h2 {
-        margin-top:0;
-        font-size: 18px;    
-    }
-    h3 {
-        font-size: 16px;
-    }
-    p {     
-        font-size: 14px;
-    }
+ .container-details div {
+     height: 25%;
+     width: 25%;
+ }
 
-}
+ .service-details {
+     color: #fefdfd;
+     padding: 20px;
+ }
 
-@media only screen and (max-width: 375px) {
-    section {
-        height: inherit;
-        padding-top: 50px;
-        padding-bottom: 50px;
-    }
-    .main-container {
-        flex-direction: column;
-    }
-    #company-1 {
-        margin-left: 20%;
-    }
-    .social-media {
-        margin-left: 20%;
-    }
-    h1 {
-        margin-top: 0;
-        font-size: 20px;
-    }
-    h2 {
-        margin-top:0;
-        font-size: 18px;    
-    }
-    h3 {
-        font-size: 16px;
-    }
-    p {     
-        font-size: 14px;
-    }
-}
+ /* text */
 
-@media only screen and (max-width: 320px) {
-    section {
-        height: inherit;
-        padding-top: 50px;
-        padding-bottom: 50px;
-    }
-    .main-container {
-        flex-direction: column;
-    }
-    #company-1 {
-        margin-left: 20%;
-    }
+ h1 {
+     margin-top: 200px;
+     text-align: center;
+     color: #bf4e47;
+     font-weight: 700;
+     font-size: 40px;
+ }
 
-    .social-media {
-        margin-left: 20%;
-    }
+ h2 {
+     margin-top: 100px;
+     text-align: center;
+     color: black;
+     font-weight: 550;
+     font-size: 30px;
+ }
 
-    #instagram,
-    #twitter,
-    #facebook {
-        padding: 15px;
-    }
+ h3 {
+     text-align: center;
+     color: black;
+ }
 
-    h1 {
-        margin-top: 0;
-        font-size: 20px;
-    }
-    h2 {
-        margin-top:0;
-        font-size: 18px;    
-    }
-    h3 {
-        font-size: 14px;
-    }
-    p {     
-        font-size: 12px;
-    }
-}
+ p {
+     margin: 0;
+     text-align: center;
+     font-size: 20px;
+     color: #51555f;
+     line-height: 2.5ch;
+ }
 
-/* colors:
+ h1,
+ h2,
+ h3,
+ p {
+     font-family: "Roboto Condensed", serif;
+ }
+
+ /* specific text */
+
+ #intro-details {
+     font-size: 22px;
+     line-height: 3ch;
+ }
+
+ #aboutus-summary {
+     padding-left: 100px;
+     padding-right: 100px;
+     font-size: 22px;
+     line-height: 3ch;
+ }
+
+ #services {
+     background-color: #bf4e47;
+     opacity: 0.89;
+ }
+
+ #contact-form {
+     height: inherit;
+ }
+
+ #companies {
+     background-color: #6b707d;
+     opacity: 0.89;
+     margin-top: 200px;
+     height: 400px;
+ }
+
+ #company-1 {
+     margin-left: 40%;
+ }
+
+ #footer {
+     background-color: #fefdfd;
+     height: 400px;
+ }
+
+ .social-media {
+     margin-left: 43%;
+     font-size: 30px;
+ }
+
+ #instagram {
+     color: #1a0dab;
+     padding: 20px;
+ }
+
+ #facebook {
+     color: #365899;
+     padding: 20px;
+ }
+
+ #twitter {
+     color: #1da1f2;
+     padding: 20px;
+ }
+
+ .copy-rights {
+     margin-top: 180px;
+ }
+
+ a {
+     text-decoration: none;
+     color: #1a0dab;
+     opacity: 0.85;
+ }
+
+ a:hover,
+ #instagram:hover,
+ #facebook:hover,
+ #twitter:hover {
+     color: #bf4e47;
+     opacity: 0.85;
+ }
+
+ /* reponsiveness to other devices */
+
+ @media only screen and (max-width: 1024px) {
+     #services {
+         height: inherit;
+     }
+     .container-details div {
+         height: 50%;
+         width: 50%;
+     }
+     #company-1 {
+         margin-left: 35%;
+     }
+     .social-media {
+         margin-left: 40%;
+     }
+     #aboutus-summary {
+         padding-left: 50px;
+         padding-right: 50px;
+     }
+ }
+
+ @media only screen and (max-width: 768px) {
+     #services {
+         height: inherit;
+     }
+     #company-1 {
+         margin-left: 30%;
+     }
+     .social-media {
+         margin-left: 35%;
+     }
+ }
+
+ @media only screen and (max-width: 414px) {
+     section {
+         height: inherit;
+         padding-top: 50px;
+         padding-bottom: 50px;
+     }
+     #section-image {
+         width: 100%;
+         height: 500px;
+     }
+     .container-details {
+         display: flex;
+         flex-direction: column;
+         flex-wrap: nowrap;
+     }
+     .container-details div {
+         width: 100%;
+     }
+     .service-details {
+         color: #fefdfd;
+         padding: 0;
+     }
+     #company-1 {
+         margin-left: 20%;
+     }
+     .social-media {
+         margin-left: 22%;
+     }
+     .copy-rights {
+         margin-top: 350px;
+     }
+     h1 {
+         margin-top: 0;
+         font-size: 20px;
+     }
+     h2 {
+         margin-top: 0;
+         font-size: 18px;
+     }
+     h3 {
+         font-size: 16px;
+     }
+     p {
+         font-size: 14px;
+     }
+ }
+
+ @media only screen and (max-width: 375px) {
+     section {
+         height: inherit;
+         padding-top: 50px;
+         padding-bottom: 50px;
+     }
+     #company-1 {
+         margin-left: 20%;
+     }
+     .social-media {
+         margin-left: 20%;
+     }
+     h1 {
+         margin-top: 0;
+         font-size: 20px;
+     }
+     h2 {
+         margin-top: 0;
+         font-size: 18px;
+     }
+     h3 {
+         font-size: 16px;
+     }
+     p {
+         font-size: 14px;
+     }
+ }
+
+ @media only screen and (max-width: 320px) {
+     section {
+         height: inherit;
+         padding-top: 50px;
+         padding-bottom: 50px;
+     }
+     #section-image {
+         width: 100%;
+         height: 400px;
+     }
+     #company-1 {
+         margin-left: 20%;
+     }
+     .social-media {
+         margin-left: 20%;
+     }
+     #instagram,
+     #twitter,
+     #facebook {
+         padding: 15px;
+     }
+     h1 {
+         margin-top: 0;
+         font-size: 20px;
+     }
+     h2 {
+         margin-top: 0;
+         font-size: 18px;
+     }
+     h3 {
+         font-size: 14px;
+     }
+     p {
+         font-size: 12px;
+     }
+ }
+
+ /* colors:
 Blue : #51555f
 Blue 2: #4b4e56
 WINE: #9c4c49
