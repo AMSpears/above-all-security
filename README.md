@@ -1,6 +1,6 @@
 ## Above All Security, LLC
 
-![picture](./src/components/Img/above_all_security_logo.png)
+![picture](./src/components/Img/above_all_security_logo.png = 200x200)
 
 ## Description
 
@@ -13,7 +13,7 @@ to connect with their customers and communicate their brand.
 
 ## Technologies Used for developed version
 
-These are the technologies used to develop the original version of the site.
+Due to the client's domain host system, I re-develop their site using the technologies below. 
 
 * HTML5
 
