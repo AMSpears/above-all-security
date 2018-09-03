@@ -1,6 +1,6 @@
 ## Above All Security, LLC
 
-![picture](./src/components/Img/above_all_security_logo.png = 200x200)
+<img src="/src/components/Img/above_all_security_logo.png" alt="Logo" width="200px" height= "200px"/>
 
 ## Description
 
