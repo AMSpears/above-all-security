@@ -11,7 +11,7 @@ to connect with their customers and communicate their brand.
 
 * [Above All Security, LLC](http://aboveall-security.com/).
 
-## Technologies Used for developed version
+## Technologies used for deployed version
 
 Due to the client's domain host system, I re-develop their site using the technologies below. 
 
@@ -21,7 +21,7 @@ Due to the client's domain host system, I re-develop their site using the techno
 
 * PHP
 
-## Technologies Used for this version
+## Technologies used for this version
 
 These are the technologies used to developed the original version of the site.
 
