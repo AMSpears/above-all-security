@@ -25,7 +25,7 @@ const HomePage = () => {
         <section id='about-us'>
           <h2>About Us</h2>
           <p id='aboutus-summary'> Above All Security, LLC is a private security firm currently based in the Northern Virginia and Washington DC area. The experience of our security officers
-            ranges from 10 to 20 years in law enforcement. We take pride in providing the best-personalized services to ensure 100% of our client's security and satisfaction.
+            ranges from 10 to 20 years in law enforcement. We take pride in providing the best-personalized services to ensure 100% of our clients security and satisfaction.
             Our cored values are based on the importance of protecting not just our clients but our nation as a whole. If you like to learn more about the type of services
             we are currently providing, feel free to scroll down to our services section or contact us for more details. </p>
         </section>
@@ -63,7 +63,7 @@ const HomePage = () => {
             </div>
             <div>
               <h3>Background Investigation</h3>
-              <p className='service-details'> We offer background investigation services that can be as detail as you need from criminal history to employment screening to the individual's public records
+              <p className='service-details'> We offer background investigation services that can be as detail as you need from criminal history to employment screening to the individuals public records
                 we got you covered. </p>
             </div>
           </div>
@@ -76,11 +76,7 @@ const HomePage = () => {
       </a>
       <section id='companies'>
         <h2>Companies we are working with</h2>
-        <a href='https://passioncitychurch.com/' target='_blank'><img
-                                                                   id='company-1'
-                                                                   src={PassionChurchLogo}
-                                                                   width='100px'
-                                                                   height='100px' /></a>
+        <a href='https://passioncitychurch.com/' target='_blank'><img  id='company-1'  src={PassionChurchLogo} width='100px' height='100px' /></a>
       </section>
       <section id='footer'>
         <h2>Follow us in social media</h2>
