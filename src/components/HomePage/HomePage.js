@@ -4,16 +4,16 @@ import DcImage from '../Img/washington_dc_picture.jpeg'
 import PassionChurchLogo from '../Img/passion_city_church_logo.png'
 import ContactForm from '../ContactForm/ContactForm'
 import './HomePage.css'
+import Content from "../Content.js"
 
 const HomePage = () => {
   return (
     // Page content divided by sessions
     <div>
       <section id='intro'>
-        <h1>Above All Security, LLC</h1>
+        <h1>{Content.introHeader}</h1>
         <p id='intro-details'>
-          Where ensuring your safety is our goal.
-          <br/> We are currently serving the Northern Virginia and Washington DC area.
+          {Content.introDetails}
         </p>
       </section>
       <section id='image'>
@@ -23,48 +23,42 @@ const HomePage = () => {
       </section>
       <a name='about-us'>
         <section id='about-us'>
-          <h2>About Us</h2>
-          <p id='aboutus-summary'> Above All Security, LLC is a private security firm currently based in the Northern Virginia and Washington DC area. The experience of our security officers
-            ranges from 10 to 20 years in law enforcement. We take pride in providing the best-personalized services to ensure 100% of our clients security and satisfaction.
-            Our cored values are based on the importance of protecting not just our clients but our nation as a whole. If you like to learn more about the type of services
-            we are currently providing, feel free to scroll down to our services section or contact us for more details. </p>
+          <h2>{Content.aboutUsHeader}</h2>
+          <p id='aboutus-summary'> {Content.aboutUsSummary} </p>
         </section>
       </a>
       <a name='services'>
         <section id='services'>
-          <h2>Our Services</h2>
+          <h2>{Content.servicesHeader}</h2>
           <div className='container-details'>
             <div>
-              <h3>Personal Protection</h3>
-              <p className='service-details'> Whether you are an executive, celebrity, athlete or just someone who in needs protection we offer both armed and unarmed protection. </p>
+              <h3>{Content.services.serviceOneHeader}</h3>
+              <p className='service-details'> {Content.services.serviceOneDetails} </p>
             </div>
             <div>
-              <h3>Corporate Events</h3>
-              <p className='service-details'> From trade shows to shareholder meetings, our team of experience off-duty police officers can ensure your protection. </p>
+              <h3>{Content.services.serviceTwoHeader}</h3>
+              <p className='service-details'> {Content.services.serviceTwoDetails}</p>
             </div>
             <div>
-              <h3>Special Events</h3>
-              <p className='service-details'> Whether you need casual security for a birthday, wedding or just a private engagement, we have experienced armed and unarmed security guards ready to serve
-                you in this capacity. </p>
+              <h3>{Content.services.serviceThreeHeader}</h3>
+              <p className='service-details'> {Content.services.serviceThreeDetails} </p>
             </div>
             <div>
-              <h3>Armed & Unarmed</h3>
-              <p className='service-details'> Our experienced team of security officers is equipped to provide you with both armed and unarmed services. They are also preparer to dress according to
-                the occasion whether in uniform, suit or just casual clothing. </p>
+              <h3>{Content.services.serviceFourHeader}</h3>
+              <p className='service-details'> {Content.services.serviceFourDetails}</p>
             </div>
             <div>
-              <h3>Residential Security</h3>
-              <p className='service-details'> Our experienced security officers also provide security for private homes, condos, apartments and any other type of residential community. </p>
+              <h3>{Content.services.serviceFiveHeader}</h3>
+              <p className='service-details'> {Content.services.serviceFiveDetails} </p>
             </div>
             <div>
-              <h3>Facility/Building Security</h3>
-              <p className='service-details'> From churches to stores or clubs events we are ready to ensure the safety of those who gather there. Our experienced team is prepared to meet the needs
-                of your facility. </p>
+              <h3>{Content.services.serviceSixHeader}</h3>
+              
+              <p className='service-details'>{Content.services.serviceSixDetails}</p>
             </div>
             <div>
-              <h3>Background Investigation</h3>
-              <p className='service-details'> We offer background investigation services that can be as detail as you need from criminal history to employment screening to the individuals public records
-                we got you covered. </p>
+              <h3>{Content.services.serviceSevenHeader}</h3>
+              <p className='service-details'>{Content.services.serviceSevenDetails}</p>
             </div>
           </div>
         </section>
